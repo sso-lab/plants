@@ -46,9 +46,22 @@ jobs:
             if (!funFact) funFact = 'Нет интересных фактов';
             if (!care) care = 'Информация по уходу отсутствует';
             
-            // Преобразуем переносы строк в HTML, обрабатываем жирный текст
-            care = care.replace(/\n/g, '<br>').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-            funFact = funFact.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+            // Функция для преобразования Markdown-форматирования в HTML
+            function formatText(text) {
+              // Сначала заменяем переносы строк на <br>
+              let formatted = text.replace(/\n/g, '<br>');
+              // Жирный курсив *** ***
+              formatted = formatted.replace(/\*\*\*(.*?)\*\*\*/g, '<strong><em>$1</em></strong>');
+              // Жирный ** **
+              formatted = formatted.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+              // Курсив * *
+              formatted = formatted.replace(/\*(.*?)\*/g, '<em>$1</em>');
+              return formatted;
+            }
+            
+            care = formatText(care);
+            funFact = formatText(funFact);
+            
             const date = new Date().toLocaleDateString('ru-RU');
             
             // Создаём имя файла (slug) из названия растения
