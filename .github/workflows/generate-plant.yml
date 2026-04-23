@@ -1,0 +1,107 @@
+name: Generate plant page from Issue
+
+on:
+  issues:
+    types: [opened, edited]
+
+jobs:
+  generate:
+    if: contains(github.event.issue.labels.*.name, 'plant')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: read
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Extract data from issue body
+        id: extract
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const body = context.payload.issue.body;
+            
+            // Функция для извлечения значения по заголовку
+            function getValue(label) {
+              const regex = new RegExp(`### ${label}\\s+([\\s\\S]+?)(?=\\n###|\\n*$)`, 'i');
+              const match = body.match(regex);
+              if (!match) return '';
+              let value = match[1].trim();
+              // Если поле многострочное, убираем лишние пробелы
+              value = value.replace(/^[\s\n]+|[\s\n]+$/g, '');
+              return value;
+            }
+            
+            const name = getValue('Название растения');
+            const latin = getValue('Латинское название');
+            const description = getValue('Краткое описание');
+            const light = getValue('💡 Освещение');
+            const water = getValue('💧 Полив');
+            const humidity = getValue('💨 Влажность воздуха');
+            let funFact = getValue('🌿 Интересный факт');
+            let care = getValue('📝 Подробный уход');
+            
+            // Если интересный факт не заполнен, ставим заглушку
+            if (!funFact) funFact = 'Нет дополнительной информации';
+            
+            // Преобразуем переносы строк в HTML
+            care = care.replace(/\n/g, '<br>');
+            
+            // Создаём "slug" из названия для имени файла (транслит не делаем, просто заменяем пробелы на дефисы)
+            const slug = name.toLowerCase().replace(/[^\wа-яё\s]/gi, '').replace(/\s+/g, '-');
+            
+            const plantData = {
+              name: name,
+              latin: latin,
+              description: description,
+              light: light,
+              water: water,
+              humidity: humidity,
+              fun_fact: funFact,
+              care: care,
+              date: new Date().toLocaleDateString('ru-RU'),
+              slug: slug
+            };
+            
+            core.setOutput('slug', slug);
+            core.setOutput('plant_data', JSON.stringify(plantData));
+
+      - name: Create HTML file
+        run: |
+          mkdir -p plants
+          # Читаем шаблон
+          TEMPLATE=$(cat template.html)
+          # Заменяем переменные
+          PLANT_DATA='${{ steps.extract.outputs.plant_data }}'
+          # Используем jq для парсинга JSON (установлен в ubuntu-latest)
+          NAME=$(echo "$PLANT_DATA" | jq -r '.name')
+          LATIN=$(echo "$PLANT_DATA" | jq -r '.latin')
+          DESC=$(echo "$PLANT_DATA" | jq -r '.description')
+          LIGHT=$(echo "$PLANT_DATA" | jq -r '.light')
+          WATER=$(echo "$PLANT_DATA" | jq -r '.water')
+          HUM=$(echo "$PLANT_DATA" | jq -r '.humidity')
+          FACT=$(echo "$PLANT_DATA" | jq -r '.fun_fact')
+          CARE=$(echo "$PLANT_DATA" | jq -r '.care')
+          DATE=$(echo "$PLANT_DATA" | jq -r '.date')
+          
+          # Заменяем плейсхолдеры с помощью sed (экранируем спецсимволы)
+          echo "$TEMPLATE" | \
+            sed -e "s|{{ name }}|$NAME|g" \
+                -e "s|{{ latin }}|$LATIN|g" \
+                -e "s|{{ description }}|$DESC|g" \
+                -e "s|{{ light }}|$LIGHT|g" \
+                -e "s|{{ water }}|$WATER|g" \
+                -e "s|{{ humidity }}|$HUM|g" \
+                -e "s|{{ fun_fact }}|$FACT|g" \
+                -e "s|{{ care }}|$CARE|g" \
+                -e "s|{{ date }}|$DATE|g" \
+                > plants/${{ steps.extract.outputs.slug }}.html
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "actions@github.com"
+          git add plants/
+          git diff --quiet && git diff --staged --quiet || git commit -m "Generate page for ${{ steps.extract.outputs.slug }}"
+          git push
