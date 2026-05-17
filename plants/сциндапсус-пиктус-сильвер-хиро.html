@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сциндапсус Пиктус 'Сильвер Хиро' | Моя коллекция растений</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            color: #1a2e1f;
+            background-color: #fefaf5;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 24px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+        .plant-image {
+            background: linear-gradient(135deg, #e8f0e5 0%, #d4e2d0 100%);
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2d5a2c;
+            font-style: italic;
+            border-bottom: 1px solid #e2dcd0;
+        }
+        .content {
+            padding: 32px;
+        }
+        /* Стили для шапки с логотипом и названием */
+        .shop-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 2px solid #e2dcd0;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo {
+            max-height: 50px;
+            width: auto;
+        }
+        .shop-name {
+            font-size: 1.3rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #2c5f2d;
+            font-family: Georgia, serif;
+        }
+        h1 {
+            font-size: 2rem;
+            margin: 0 0 0.25rem 0;
+            color: #1a3b1a;
+            letter-spacing: -0.01em;
+        }
+        .latin-name {
+            font-style: italic;
+            color: #5a7c5a;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+        .description {
+            color: #4a5e4a;
+            margin-bottom: 1.5rem;
+        }
+        .care-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 20px 0;
+            background-color: #f9f6f0;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .care-item {
+            text-align: center;
+        }
+        .care-icon {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+        .care-label {
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #5a7c5a;
+            margin-bottom: 4px;
+        }
+        .care-value {
+            font-size: 0.9rem;
+            color: #2c3e2d;
+        }
+        .fun-fact {
+            background-color: #f0f4ea;
+            padding: 16px;
+            border-radius: 20px;
+            margin: 20px 0;
+            font-size: 0.95rem;
+            border-left: 4px solid #5a7c5a;
+        }
+        hr {
+            margin: 24px 0;
+            border: none;
+            height: 1px;
+            background-color: #e2dcd0;
+        }
+        .care-details {
+            margin-top: 20px;
+        }
+        .care-details h3 {
+            margin-bottom: 12px;
+            color: #1a3b1a;
+        }
+        .care-details p {
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            color: #4a5e4a;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.75rem;
+            color: #8a9e8a;
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 1px solid #e2dcd0;
+        }
+        @media (max-width: 600px) {
+            .content { padding: 20px; }
+            h1 { font-size: 1.5rem; }
+            .care-grid { grid-template-columns: 1fr; gap: 15px; }
+            .shop-header { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="plant-image">
+        🪴 Сциндапсус Пиктус 'Сильвер Хиро'
+    </div>
+    <div class="content">
+        <!-- Логотип и название магазина -->
+        <div class="shop-header">
+            <div class="logo-area">
+                <!-- Если логотип называется иначе или лежит в другой папке, измените src -->
+                <img src="logo.png" alt="Логотип Green Chaos" class="logo" onerror="this.style.display='none'">
+                <span class="shop-name">GREEN CHAOS</span>
+            </div>
+        </div>
+
+        <h1>Сциндапсус Пиктус 'Сильвер Хиро'</h1>
+        <div class="latin-name">Scindapsus Pictus 'Silver Hero'</div>
+        <div class="description">Этот сциндапсус — одна из самых «серебристых» форм вида. Его крупные, бархатистые сердцевидные листья покрыты плотными пятнами и разводами серебристо-белого оттенка, которые занимают большую часть поверхности, создавая эффект мерцающей, почти металлической листвы</div>
+
+        <div class="care-grid">
+            <div class="care-item">
+                <div class="care-icon">☀️</div>
+                <div class="care-label">Освещение</div>
+                <div class="care-value">Яркий, рассеянный свет</div>
+            </div>
+            <div class="care-item">
+                <div class="care-icon">💧</div>
+                <div class="care-label">Полив</div>
+                <div class="care-value">Обильный</div>
+            </div>
+            <div class="care-item">
+                <div class="care-icon">💨</div>
+                <div class="care-label">Влажность</div>
+                <div class="care-value">Высокая, любит опрыскивание</div>
+            </div>
+        </div>
+
+        <div class="fun-fact">
+            <strong>🌿 Интересный факт:</strong> Серебристый узор «Сильвер Хиро» — это не пигментация, а оптическая иллюзия, созданная природой. Участки листа кажутся серебряными из-за тончайших воздушных прослоек между верхним слоем кожицы и внутренней тканью листа. Эти микрополости рассеивают свет, создавая тот самый холодный металлический блеск, который невозможно спутать с другими растениями. C возрастом и при правильном освещении этот эффект становится только ярче
+        </div>
+
+        <hr>
+
+        <div class="care-details">
+            <h3>📝 Подробный уход</h3>
+            <strong>Свет:</strong> Яркий рассеянный. Чем больше серебристых участков на листьях, тем светолюбивее сорт. При недостатке света «Сильвер Хиро» теряет металлический блеск, мельчает и зеленеет. От прямых солнечных лучей листья получают ожоги и тускнеют<br><strong>Температура:</strong> Оптимально +18…+25 °C. Зимой не ниже +16 °C (холодный подоконник провоцирует загнивание корней). Боится резких перепадов температуры и сквозняков<br><strong>Полив:</strong> Умеренный, после просыхания верхнего слоя почвы на 2–3 см. Перелив губителен — корни легко загнивают. Зимой полив сокращают, но не допускают полного пересыхания земляного кома<br><strong>Влажность воздуха:</strong> Высокая (60% и выше). Регулярные опрыскивания мягкой тёплой водой, тёплый душ, увлажнитель воздуха или поддон с влажным керамзитом. При сухом воздухе листья скручиваются, а края серебристых участков подсыхают<br><strong>Почва:</strong> Рыхлая, воздухопроницаемая, слабокислая (pH 5,5–6,5). Готовая смесь для ароидных или: торф + перлит + кора + листовая земля (2:1:1:1). Обязателен хороший дренаж<br><strong>Подкормка:</strong> С весны до осени — раз в 3–4 недели удобрением для декоративно-лиственных растений в половинной дозировке. Избыток азота и перекорм ведут к потере контрастности серебристого узора<br><strong>Пересадка:</strong> Молодые растения — ежегодно весной, взрослые — раз в 2–3 года или когда корни покажутся из дренажных отверстий. Горшок неглубокий, на 2 см шире предыдущего (в тесном горшке узор ярче). На дне — слой дренажа<br><strong>Обрезка и опора:</strong> Для кустистости прищипывают верхушки. Как лиана нуждается в опоре (моховая палка, кокосовый столбик) — тогда листья взрослеют и становятся крупнее. Можно выращивать как ампель в подвесном кашпо<br><strong>Размножение:</strong> Верхушечными и стеблевыми черенками с 2–3 узлами. Укореняют в воде (с добавлением активированного угля) или влажном перлите/сфагнуме. Корни появляются через 3–4 недели<br><strong>Особые приметы:</strong> У сциндапсусов нет укореняющихся воздушных корней, как у монстеры — только цепляющиеся. Их нельзя заглублять в почву. Также бархатистые листья плохо переносят запыление — протирайте их мягкой влажной губкой (не полиролями)
+        </div>
+
+        <footer>
+            Моя коллекция растений · Уход обновлён: 17.05.2026
+        </footer>
+    </div>
+</div>
+</body>
+</html>
