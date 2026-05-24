@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кодиеум Пестрый 'Санни Стар' | Моя коллекция растений</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            color: #1a2e1f;
+            background-color: #fefaf5;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 24px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+        .plant-image {
+            background: linear-gradient(135deg, #e8f0e5 0%, #d4e2d0 100%);
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2d5a2c;
+            font-style: italic;
+            border-bottom: 1px solid #e2dcd0;
+        }
+        .content {
+            padding: 32px;
+        }
+        /* Стили для шапки с логотипом и названием */
+        .shop-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 2px solid #e2dcd0;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo {
+            max-height: 50px;
+            width: auto;
+        }
+        .shop-name {
+            font-size: 1.3rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #2c5f2d;
+            font-family: Georgia, serif;
+        }
+        h1 {
+            font-size: 2rem;
+            margin: 0 0 0.25rem 0;
+            color: #1a3b1a;
+            letter-spacing: -0.01em;
+        }
+        .latin-name {
+            font-style: italic;
+            color: #5a7c5a;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+        .description {
+            color: #4a5e4a;
+            margin-bottom: 1.5rem;
+        }
+        .care-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 20px 0;
+            background-color: #f9f6f0;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .care-item {
+            text-align: center;
+        }
+        .care-icon {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+        .care-label {
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #5a7c5a;
+            margin-bottom: 4px;
+        }
+        .care-value {
+            font-size: 0.9rem;
+            color: #2c3e2d;
+        }
+        .fun-fact {
+            background-color: #f0f4ea;
+            padding: 16px;
+            border-radius: 20px;
+            margin: 20px 0;
+            font-size: 0.95rem;
+            border-left: 4px solid #5a7c5a;
+        }
+        hr {
+            margin: 24px 0;
+            border: none;
+            height: 1px;
+            background-color: #e2dcd0;
+        }
+        .care-details {
+            margin-top: 20px;
+        }
+        .care-details h3 {
+            margin-bottom: 12px;
+            color: #1a3b1a;
+        }
+        .care-details p {
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            color: #4a5e4a;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.75rem;
+            color: #8a9e8a;
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 1px solid #e2dcd0;
+        }
+        @media (max-width: 600px) {
+            .content { padding: 20px; }
+            h1 { font-size: 1.5rem; }
+            .care-grid { grid-template-columns: 1fr; gap: 15px; }
+            .shop-header { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="plant-image">
+        🪴 Кодиеум Пестрый 'Санни Стар'
+    </div>
+    <div class="content">
+        <!-- Логотип и название магазина -->
+        <div class="shop-header">
+            <div class="logo-area">
+                <!-- Если логотип называется иначе или лежит в другой папке, измените src -->
+                <img src="logo.png" alt="Логотип Green Chaos" class="logo" onerror="this.style.display='none'">
+                <span class="shop-name">GREEN CHAOS</span>
+            </div>
+        </div>
+
+        <h1>Кодиеум Пестрый 'Санни Стар'</h1>
+        <div class="latin-name">Codiaeum Variegatum 'Sunny Star'</div>
+        <div class="description">Этот вечнозеленый кустарник из семейства Молочайные отличается невероятно вариабельными пестрыми листьями. Его название буквально переводится как «Солнечная звезда» — и с первого взгляда понятно, почему: молодые листья имеют нежно-зеленый оттенок с желтоватым крапом, но с возрастом превращаются в настоящее желтое «солнышко». Плотные, глянцевые листья длиной до 30 см собраны в подобие звезды на стебле. Это растение не цветет, но яркость и разнообразие оттенков его листвы с лихвой компенсирует отсутствие цветов</div>
+
+        <div class="care-grid">
+            <div class="care-item">
+                <div class="care-icon">☀️</div>
+                <div class="care-label">Освещение</div>
+                <div class="care-value">Яркий, рассеянный свет</div>
+            </div>
+            <div class="care-item">
+                <div class="care-icon">💧</div>
+                <div class="care-label">Полив</div>
+                <div class="care-value">Обильный</div>
+            </div>
+            <div class="care-item">
+                <div class="care-icon">💨</div>
+                <div class="care-label">Влажность</div>
+                <div class="care-value">Высокая, любит опрыскивание</div>
+            </div>
+        </div>
+
+        <div class="fun-fact">
+            <strong>🌿 Интересный факт:</strong> Это растение известно своей способностью менять окраску по мере взросления, словно маленький хамелеон. Его молодые листочки рождаются изумрудно-зелеными с бледно-желтыми пятнышками, напоминающими брызги. Но с возрастом они «загораются»: желтый цвет проявляется все ярче, пока зелеными не остаются лишь края и основания листьев. Этот природный трюк часто вызывает удивление даже у опытных цветоводов и неизменно привлекает к растению любопытные взгляды
+        </div>
+
+        <hr>
+
+        <div class="care-details">
+            <h3>📝 Подробный уход</h3>
+            <strong><em>Свет:</em></strong> Этому растению нужно яркое, но обязательно рассеянное освещение, чтобы сохранить свою эффектную окраску. Прямые солнечные лучи (особенно в полдень) оставят на нежных листьях ожоги. При недостатке света пестрая листва быстро бледнеет. Идеальный вариант — восточные и западные окна, а в холодное время года рекомендована дополнительная досветка специальными лампами<br><strong><em>Температура:</em></strong> Кодиеум — теплолюбивое растение из тропиков. В теплое время года ему комфортно в диапазоне от +20 до +28 °C. Зимой температуру можно опустить до +18°C, но она не должна падать ниже +15°C. Желательно избегать резких перепадов температур и сквозняков, так как они могут стать причиной стресса и потери листьев<br><strong><em>Полив:</em></strong> Как и для многих растений, важно найти золотую середину. Летом поливайте растение обильно, но только после просыхания верхнего слоя земли. Зимой полив сокращают, не допуская полного пересыхания почвы. Вода должна быть теплой, мягкой и отстоянной<br><strong><em>Влажность воздуха:</em></strong> Высокая влажность — одно из главных условий для здоровья кодиеума. Если воздух в помещении сухой, листья могут начать сохнуть и опадать. Обеспечить нужную влажность помогут регулярные опрыскивания, протирание листьев влажной губкой и размещение горшка на поддоне с увлажненной галькой<br><strong><em>Почва:</em></strong> Растению требуется рыхлый, питательный и хорошо дренированный грунт с нейтральной или слабокислой реакцией. Идеальна будет готовая универсальная смесь, в которую для рыхлости добавляют песок и вермикулит. На дне горшка обязательно должен быть слой дренажа (керамзит)<br><strong><em>Подкормка:</em></strong> В период активного роста (весна–лето) кодиеуму нужна регулярная подкормка 1–2 раза в месяц комплексными минеральными удобрениями для декоративно-лиственных растений. Зимой растение подкармливают не чаще 1 раза в месяц, если оно продолжает расти и находится в тепле<br><strong><em>Пересадка:</em></strong> Молодые растения пересаживают каждый год весной, по мере роста. Взрослые экземпляры требуют пересадки раз в 2–3 года или тогда, когда корни полностью оплетут земляной ком<br><strong><em>Обрезка и опора:</em></strong> Особой обрезки растение не требует. Достаточно весной удалять слишком вытянувшиеся или слабые побеги, чтобы стимулировать ветвление и сформировать красивый куст. В опоре нуждаются только взрослые, очень крупные кусты, чьи побеги могут не выдерживать веса листвы<br><strong><em>Размножение:</em></strong> Проще всего размножать это растение верхушечными черенками. Для этого нужно срезать черенок длиной 10-15 см, подсушить место среза, а затем укоренить его в воде или во влажном грунте<br><strong><em>Особая примета:</em></strong> Важно помнить, что сок кодиеума ядовит и вызывает раздражение кожи. Поэтому все работы с растением нужно проводить в перчатках, а после контакта тщательно мыть руки. Лучше размещать его в местах, недоступных для детей и домашних животных
+        </div>
+
+        <footer>
+            Моя коллекция растений · Уход обновлён: 24.05.2026
+        </footer>
+    </div>
+</div>
+</body>
+</html>
