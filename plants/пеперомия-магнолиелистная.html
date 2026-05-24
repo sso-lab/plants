@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пеперомия Магнолиелистная | Моя коллекция растений</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            color: #1a2e1f;
+            background-color: #fefaf5;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 24px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+        .plant-image {
+            background: linear-gradient(135deg, #e8f0e5 0%, #d4e2d0 100%);
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2d5a2c;
+            font-style: italic;
+            border-bottom: 1px solid #e2dcd0;
+        }
+        .content {
+            padding: 32px;
+        }
+        /* Стили для шапки с логотипом и названием */
+        .shop-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 2px solid #e2dcd0;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo {
+            max-height: 50px;
+            width: auto;
+        }
+        .shop-name {
+            font-size: 1.3rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #2c5f2d;
+            font-family: Georgia, serif;
+        }
+        h1 {
+            font-size: 2rem;
+            margin: 0 0 0.25rem 0;
+            color: #1a3b1a;
+            letter-spacing: -0.01em;
+        }
+        .latin-name {
+            font-style: italic;
+            color: #5a7c5a;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+        .description {
+            color: #4a5e4a;
+            margin-bottom: 1.5rem;
+        }
+        .care-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 20px 0;
+            background-color: #f9f6f0;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .care-item {
+            text-align: center;
+        }
+        .care-icon {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+        .care-label {
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #5a7c5a;
+            margin-bottom: 4px;
+        }
+        .care-value {
+            font-size: 0.9rem;
+            color: #2c3e2d;
+        }
+        .fun-fact {
+            background-color: #f0f4ea;
+            padding: 16px;
+            border-radius: 20px;
+            margin: 20px 0;
+            font-size: 0.95rem;
+            border-left: 4px solid #5a7c5a;
+        }
+        hr {
+            margin: 24px 0;
+            border: none;
+            height: 1px;
+            background-color: #e2dcd0;
+        }
+        .care-details {
+            margin-top: 20px;
+        }
+        .care-details h3 {
+            margin-bottom: 12px;
+            color: #1a3b1a;
+        }
+        .care-details p {
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            color: #4a5e4a;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.75rem;
+            color: #8a9e8a;
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 1px solid #e2dcd0;
+        }
+        @media (max-width: 600px) {
+            .content { padding: 20px; }
+            h1 { font-size: 1.5rem; }
+            .care-grid { grid-template-columns: 1fr; gap: 15px; }
+            .shop-header { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="plant-image">
+        🪴 Пеперомия Магнолиелистная
+    </div>
+    <div class="content">
+        <!-- Логотип и название магазина -->
+        <div class="shop-header">
+            <div class="logo-area">
+                <!-- Если логотип называется иначе или лежит в другой папке, измените src -->
+                <img src="logo.png" alt="Логотип Green Chaos" class="logo" onerror="this.style.display='none'">
+                <span class="shop-name">GREEN CHAOS</span>
+            </div>
+        </div>
+
+        <h1>Пеперомия Магнолиелистная</h1>
+        <div class="latin-name">Peperomia Magnoliifolia</div>
+        <div class="description">Это настоящая находка для занятых людей и начинающих цветоводов. Благодаря мясистым листьям-суккулентам она прощает пропущенные поливы, а ее компактные размеры позволяют украсить даже самый маленький подоконник</div>
+
+        <div class="care-grid">
+            <div class="care-item">
+                <div class="care-icon">☀️</div>
+                <div class="care-label">Освещение</div>
+                <div class="care-value">Яркий, рассеянный свет</div>
+            </div>
+            <div class="care-item">
+                <div class="care-icon">💧</div>
+                <div class="care-label">Полив</div>
+                <div class="care-value">Умеренный</div>
+            </div>
+            <div class="care-item">
+                <div class="care-icon">💨</div>
+                <div class="care-label">Влажность</div>
+                <div class="care-value">Обычная комнатная</div>
+            </div>
+        </div>
+
+        <div class="fun-fact">
+            <strong>🌿 Интересный факт:</strong> Название «Pepper Face» («Перечное лицо»), которое растение получило от англичан, относится к его невзрачным соцветиям, похожим на колоски подорожника или перечные зерна. Они не просто безобидны, а даже выступают в роли живого барометра: накануне дождя соцветия скручиваются, предсказывая изменение погоды. Родом из тропических лесов, цветок активно очищает воздух, выделяя фитонциды, а в народе его ласково прозвали «дружная семейка» за способность создавать уют и сглаживать противоречия в доме
+        </div>
+
+        <hr>
+
+        <div class="care-details">
+            <h3>📝 Подробный уход</h3>
+            <strong><em>Свет:</em></strong> Яркий рассеянный. Идеальное место — восточные или западные окна, также отлично растет в полутени и при полностью искусственном освещении. Пестролистным формам нужно больше света, иначе пестрая окраска побледнеет. От прямых солнечных лучей листья получают ожоги<br><strong><em>Температура:</em></strong> Оптимально от +18 до +25 °C. Зимой не ниже +16 °C (кратковременно выдерживает до +12 °C). Боится резких сквозняков и переохлаждения корней<br><strong><em>Полив:</em></strong> Умеренный, только после полного просыхания верхнего слоя почвы на 2–3 см. Переувлажнение губительно — ведет к гниению корней и появлению пробковидных наростов на листьях. Зимой полив сокращают<br><strong><em>Влажность воздуха:</em></strong> Не требовательна, прекрасно адаптируется к сухому воздуху квартир. Летом время от времени листья опрыскивают, зимой опрыскивания прекращают<br><strong><em>Почва:</em></strong> Рыхлая, воздухопроницаемая, нейтральная или слабокислая. Подойдет готовая смесь для суккулентов или универсальный грунт с добавлением песка или перлита<br><strong><em>Подкормка:</em></strong> С весны до осени — раз в 3–4 недели удобрением для суккулентов или декоративно-лиственных растений в половинной дозировке. Зимой подкормки прекращают<br><strong><em>Пересадка:</em></strong> Молодые растения — ежегодно весной, взрослые — раз в 2–3 года или когда корни покажутся из дренажных отверстий. Горшок выбирают неглубокий, на 2–3 см шире предыдущего<br><strong><em>Обрезка и опора:</em></strong> В опоре не нуждается. Регулярная прищипка верхушек стимулирует ветвление и формирует пышный куст. Санитарная обрезка — удаление старых, пожелтевших или поврежденных листьев<br><strong><em>Размножение:</em></strong> Листовыми или стеблевыми черенками весной-летом. Черенки легко укореняются в воде или во влажном перлите<br><strong><em>Особая примета:</em></strong> Растение не токсично для человека, но может вызывать раздражение у людей с чувствительной кожей
+        </div>
+
+        <footer>
+            Моя коллекция растений · Уход обновлён: 24.05.2026
+        </footer>
+    </div>
+</div>
+</body>
+</html>
