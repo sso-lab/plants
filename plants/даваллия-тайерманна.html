@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Даваллия Тайерманна | Моя коллекция растений</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            color: #1a2e1f;
+            background-color: #fefaf5;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 24px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+        .plant-image {
+            background: linear-gradient(135deg, #e8f0e5 0%, #d4e2d0 100%);
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2d5a2c;
+            font-style: italic;
+            border-bottom: 1px solid #e2dcd0;
+        }
+        .content {
+            padding: 32px;
+        }
+        /* Стили для шапки с логотипом и названием */
+        .shop-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 2px solid #e2dcd0;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo {
+            max-height: 50px;
+            width: auto;
+        }
+        .shop-name {
+            font-size: 1.3rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #2c5f2d;
+            font-family: Georgia, serif;
+        }
+        h1 {
+            font-size: 2rem;
+            margin: 0 0 0.25rem 0;
+            color: #1a3b1a;
+            letter-spacing: -0.01em;
+        }
+        .latin-name {
+            font-style: italic;
+            color: #5a7c5a;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+        .description {
+            color: #4a5e4a;
+            margin-bottom: 1.5rem;
+        }
+        .care-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 20px 0;
+            background-color: #f9f6f0;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .care-item {
+            text-align: center;
+        }
+        .care-icon {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+        .care-label {
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #5a7c5a;
+            margin-bottom: 4px;
+        }
+        .care-value {
+            font-size: 0.9rem;
+            color: #2c3e2d;
+        }
+        .fun-fact {
+            background-color: #f0f4ea;
+            padding: 16px;
+            border-radius: 20px;
+            margin: 20px 0;
+            font-size: 0.95rem;
+            border-left: 4px solid #5a7c5a;
+        }
+        hr {
+            margin: 24px 0;
+            border: none;
+            height: 1px;
+            background-color: #e2dcd0;
+        }
+        .care-details {
+            margin-top: 20px;
+        }
+        .care-details h3 {
+            margin-bottom: 12px;
+            color: #1a3b1a;
+        }
+        .care-details p {
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            color: #4a5e4a;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.75rem;
+            color: #8a9e8a;
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 1px solid #e2dcd0;
+        }
+        @media (max-width: 600px) {
+            .content { padding: 20px; }
+            h1 { font-size: 1.5rem; }
+            .care-grid { grid-template-columns: 1fr; gap: 15px; }
+            .shop-header { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="plant-image">
+        🪴 Даваллия Тайерманна
+    </div>
+    <div class="content">
+        <!-- Логотип и название магазина -->
+        <div class="shop-header">
+            <div class="logo-area">
+                <!-- Если логотип называется иначе или лежит в другой папке, измените src -->
+                <img src="logo.png" alt="Логотип Green Chaos" class="logo" onerror="this.style.display='none'">
+                <span class="shop-name">GREEN CHAOS</span>
+            </div>
+        </div>
+
+        <h1>Даваллия Тайерманна</h1>
+        <div class="latin-name">Davallia Tyermannii</div>
+        <div class="description">Этот эпифитный папоротник из Восточной Азии, также известный как Davallia Bullata, совершенно не похож на своих сородичей. Его главная «фишка» — толстые, ползучие корневища, покрытые густыми, мягкими, серебристо-белыми чешуйками. Они переползают через край горшка, напоминая пушистые кроличьи лапки, и придают растению немного сказочный, даже готический вид. Ажурная, кружевная зелень только дополняет этот необычный образ</div>
+
+        <div class="care-grid">
+            <div class="care-item">
+                <div class="care-icon">☀️</div>
+                <div class="care-label">Освещение</div>
+                <div class="care-value">Яркий, рассеянный свет</div>
+            </div>
+            <div class="care-item">
+                <div class="care-icon">💧</div>
+                <div class="care-label">Полив</div>
+                <div class="care-value">Умеренный</div>
+            </div>
+            <div class="care-item">
+                <div class="care-icon">💨</div>
+                <div class="care-label">Влажность</div>
+                <div class="care-value">Высокая, любит опрыскивание</div>
+            </div>
+        </div>
+
+        <div class="fun-fact">
+            <strong>🌿 Интересный факт:</strong> В дикой природе этот папоротник — настоящий эпифит: он может выживать без земли! Его бархатистые «лапки» служат не только для красоты, но и для выживания. Ворсинки на корневищах улавливают влагу прямо из воздуха, а также собирают падающие частички мха, коры и органики, превращая их в питательный субстрат для роста
+        </div>
+
+        <hr>
+
+        <div class="care-details">
+            <h3>📝 Подробный уход</h3>
+            <strong><em>Свет:</em></strong> Яркий рассеянный. Прекрасно растет на восточных и западных окнах, а также в легкой полутени. От прямых солнечных лучей, которые могут вызвать ожоги, его нужно беречь. Чем меньше света, тем медленнее будет рост<br><strong><em>Температура:</em></strong> Оптимальная температура летом — +18…+25 °C. Зимой папоротнику нужна прохлада, желательно +15…+18 °C. Главное — избегать резких перепадов и холодных сквозняков<br><strong><em>Полив:</em></strong> Регулярный, мягкой отстоянной водой комнатной температуры. Ориентируйтесь на просыхание верхнего слоя почвы: 1-2 раз в неделю обычно достаточно. Важнейшее правило: не заливайте растение, застой воды в горшке губителен. Оно лучше перенесет кратковременную пересушку, чем постоянное переувлажнение<br><strong><em>Влажность воздуха:</em></strong> Высокая, от 60% и выше. Ежедневно опрыскивайте мягкой водой из пульверизатора (особенно сами «лапки»), ставьте горшок на поддон с влажным керамзитом. В сухом воздухе папоротник будет болеть. Желательно регулярно устраивать теплый душ, чтобы смывать пыль с ажурных листьев<br><strong><em>Почва:</em></strong> Самое главное — чтобы грунт был рыхлый, воздухопроницаемый и легкий, как для эпифитов. Идеально подойдет готовая смесь для папоротников или орхидей с добавлением перлита, кусочков коры и мха сфагнума. Секрет: пушистые корневища нельзя заглублять! Их задача — ползать по поверхности, цепляясь за опоры и собирая влагу из воздуха<br><strong><em>Подкормка:</em></strong> Только в период активного роста, с весны до осени — 1 раз в 2-4 недели. Используйте комплексное удобрение для декоративно-лиственных в половинной от рекомендуемой дозировке. Зимой подкормки прекращают<br><strong><em>Пересадка:</em></strong> Молодые растения пересаживают ежегодно, взрослые — раз в 2-3 года, весной. Горшок должен быть на 2-3 см шире предыдущего, но лучше выбирать широкий и неглубокий. Обязателен хороший слой дренажа на дне<br><strong><em>Обрезка и опора:</em></strong> В опоре не нуждается. Обрезка — только санитарная: удаление старых, пожелтевших или поврежденных листьев у основания<br><strong><em>Размножение:</em></strong> Проще всего — делением корневища при пересадке. Убедитесь, что у отделенной части есть несколько здоровых «лапок» и листьев<br><strong><em>Особая примета:</em></strong> Растение совершенно не токсично! Считается безопасным для кошек, собак и детей, поэтому его можно смело размещать в любом доступном месте
+        </div>
+
+        <footer>
+            Моя коллекция растений · Уход обновлён: 24.05.2026
+        </footer>
+    </div>
+</div>
+</body>
+</html>
