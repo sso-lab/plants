@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Алоказия Одора 'Батик' | Моя коллекция растений</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            color: #1a2e1f;
+            background-color: #fefaf5;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 24px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+        .plant-image {
+            background: linear-gradient(135deg, #e8f0e5 0%, #d4e2d0 100%);
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2d5a2c;
+            font-style: italic;
+            border-bottom: 1px solid #e2dcd0;
+        }
+        .content {
+            padding: 32px;
+        }
+        /* Стили для шапки с логотипом и названием */
+        .shop-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 2px solid #e2dcd0;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo {
+            max-height: 50px;
+            width: auto;
+        }
+        .shop-name {
+            font-size: 1.3rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #2c5f2d;
+            font-family: Georgia, serif;
+        }
+        h1 {
+            font-size: 2rem;
+            margin: 0 0 0.25rem 0;
+            color: #1a3b1a;
+            letter-spacing: -0.01em;
+        }
+        .latin-name {
+            font-style: italic;
+            color: #5a7c5a;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+        .description {
+            color: #4a5e4a;
+            margin-bottom: 1.5rem;
+        }
+        .care-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 20px 0;
+            background-color: #f9f6f0;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .care-item {
+            text-align: center;
+        }
+        .care-icon {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+        .care-label {
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #5a7c5a;
+            margin-bottom: 4px;
+        }
+        .care-value {
+            font-size: 0.9rem;
+            color: #2c3e2d;
+        }
+        .fun-fact {
+            background-color: #f0f4ea;
+            padding: 16px;
+            border-radius: 20px;
+            margin: 20px 0;
+            font-size: 0.95rem;
+            border-left: 4px solid #5a7c5a;
+        }
+        hr {
+            margin: 24px 0;
+            border: none;
+            height: 1px;
+            background-color: #e2dcd0;
+        }
+        .care-details {
+            margin-top: 20px;
+        }
+        .care-details h3 {
+            margin-bottom: 12px;
+            color: #1a3b1a;
+        }
+        .care-details p {
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            color: #4a5e4a;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.75rem;
+            color: #8a9e8a;
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 1px solid #e2dcd0;
+        }
+        @media (max-width: 600px) {
+            .content { padding: 20px; }
+            h1 { font-size: 1.5rem; }
+            .care-grid { grid-template-columns: 1fr; gap: 15px; }
+            .shop-header { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="plant-image">
+        🪴 Алоказия Одора 'Батик'
+    </div>
+    <div class="content">
+        <!-- Логотип и название магазина -->
+        <div class="shop-header">
+            <div class="logo-area">
+                <!-- Если логотип называется иначе или лежит в другой папке, измените src -->
+                <img src="logo.png" alt="Логотип Green Chaos" class="logo" onerror="this.style.display='none'">
+                <span class="shop-name">GREEN CHAOS</span>
+            </div>
+        </div>
+
+        <h1>Алоказия Одора 'Батик'</h1>
+        <div class="latin-name">Alocasia Odora 'Batik'</div>
+        <div class="description">Это редкая вечнозеленая алоказия, которая поражает воображение крупными, блестящими листьями с уникальным «мраморным» узором. На темно-зеленом фоне хаотично разбросаны кремовые, белые и салатовые мазки, создавая рисунок, который словно написан кистью художника. В отличие от большинства алоказий, 'Батик' растет более компактным, прямостоячим кустом, достигая всего 60-90 см в высоту, что делает его идеальным для любого интерьера</div>
+
+        <div class="care-grid">
+            <div class="care-item">
+                <div class="care-icon">☀️</div>
+                <div class="care-label">Освещение</div>
+                <div class="care-value">Яркий, рассеянный свет</div>
+            </div>
+            <div class="care-item">
+                <div class="care-icon">💧</div>
+                <div class="care-label">Полив</div>
+                <div class="care-value">Умеренный</div>
+            </div>
+            <div class="care-item">
+                <div class="care-icon">💨</div>
+                <div class="care-label">Влажность</div>
+                <div class="care-value">Высокая, любит опрыскивание</div>
+            </div>
+        </div>
+
+        <div class="fun-fact">
+            <strong>🌿 Интересный факт:</strong> Сорт 'Батик' получил свое название благодаря уникальному узору листьев, который невероятно напоминает рисунок на традиционной индонезийской ткани батик, создаваемый методом ручной росписи по ткани. Более того, это не просто удачная природная форма, а результат редкой естественной мутации, при которой клетки растения теряют хлорофилл, создавая этот потрясающий «ручной» рисунок, делающий каждый лист абсолютно неповторимым
+        </div>
+
+        <hr>
+
+        <div class="care-details">
+            <h3>📝 Подробный уход</h3>
+            <strong><em>Свет:</em></strong> Яркий рассеянный. Для сохранения контрастной вариегатности этому сорту нужно больше света, чем зеленым формам, иначе пестрые участки позеленеют. Идеальное место — окна восточной или западной экспозиции. От прямых солнечных лучей листья получают ожоги, а при недостатке света рисунок бледнеет<br><strong><em>Температура:</em></strong> Оптимально от +20 до +28 °C. Зимой столбик термометра не должен опускаться ниже +16 °C. Боится резких сквозняков и перепадов температур<br><strong><em>Полив:</em></strong> Умеренный, после просыхания верхнего слоя почвы на 2–3 см (или когда верхние 2-3 см грунта станут сухими). Земляной ком должен быть равномерно слегка влажным, но не мокрым. Переувлажнение губительно ведет к гниению корней. Для полива лучше использовать мягкую, отстоянную или фильтрованную воду<br><strong><em>Влажность воздуха:</em></strong> Очень высокая (60–80%). Регулярные опрыскивания мягкой водой, теплый душ, поддон с влажным керамзитом или увлажнитель воздуха. При сухом воздухе кончики листьев сохнут и темнеют<br><strong><em>Почва:</em></strong> Рыхлая, очень воздухопроницаемая, слабокислая. Готовая смесь для ароидных с добавлением перлита, сосновой коры и сфагнума. Грунт должен быть богат органикой. На дне горшка — толстый слой дренажа<br><strong><em>Подкормка:</em></strong> С весны до осени — раз в 3–4 недели комплексным удобрением для декоративно-лиственных в половинной от рекомендуемой дозировки. Зимой подкормки прекращают или значительно сокращают<br><strong><em>Пересадка:</em></strong> Молодые растения — ежегодно весной, взрослые — раз в 2–3 года. Горшок должен быть лишь на 2–3 см шире предыдущего. Пересадку проводят методом перевалки, чтобы не травмировать корни<br><strong><em>Обрезка и опора:</em></strong> В опоре не нуждается. Обрезка — санитарная: удаление старых, пожелтевших или поврежденных листьев<br><strong><em>Размножение:</em></strong> Деление корневища при весенней пересадке или отделение дочерних отпрысков («деток»), которые активно формируются у этого сорта<br><strong><em>Особая примета:</em></strong> Все части растения содержат кристаллы оксалата кальция, вызывающие сильное раздражение кожи и слизистых оболочек, а также опасны для домашних животных. Все работы по уходу проводите в перчатках и тщательно мойте руки
+        </div>
+
+        <footer>
+            Моя коллекция растений · Уход обновлён: 24.05.2026
+        </footer>
+    </div>
+</div>
+</body>
+</html>
