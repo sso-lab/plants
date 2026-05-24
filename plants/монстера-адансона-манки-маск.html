@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Монстера Адансона 'Манки Маск' | Моя коллекция растений</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            color: #1a2e1f;
+            background-color: #fefaf5;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 24px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+        .plant-image {
+            background: linear-gradient(135deg, #e8f0e5 0%, #d4e2d0 100%);
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2d5a2c;
+            font-style: italic;
+            border-bottom: 1px solid #e2dcd0;
+        }
+        .content {
+            padding: 32px;
+        }
+        /* Стили для шапки с логотипом и названием */
+        .shop-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 2px solid #e2dcd0;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo {
+            max-height: 50px;
+            width: auto;
+        }
+        .shop-name {
+            font-size: 1.3rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #2c5f2d;
+            font-family: Georgia, serif;
+        }
+        h1 {
+            font-size: 2rem;
+            margin: 0 0 0.25rem 0;
+            color: #1a3b1a;
+            letter-spacing: -0.01em;
+        }
+        .latin-name {
+            font-style: italic;
+            color: #5a7c5a;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+        .description {
+            color: #4a5e4a;
+            margin-bottom: 1.5rem;
+        }
+        .care-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 20px 0;
+            background-color: #f9f6f0;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .care-item {
+            text-align: center;
+        }
+        .care-icon {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+        .care-label {
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #5a7c5a;
+            margin-bottom: 4px;
+        }
+        .care-value {
+            font-size: 0.9rem;
+            color: #2c3e2d;
+        }
+        .fun-fact {
+            background-color: #f0f4ea;
+            padding: 16px;
+            border-radius: 20px;
+            margin: 20px 0;
+            font-size: 0.95rem;
+            border-left: 4px solid #5a7c5a;
+        }
+        hr {
+            margin: 24px 0;
+            border: none;
+            height: 1px;
+            background-color: #e2dcd0;
+        }
+        .care-details {
+            margin-top: 20px;
+        }
+        .care-details h3 {
+            margin-bottom: 12px;
+            color: #1a3b1a;
+        }
+        .care-details p {
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            color: #4a5e4a;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.75rem;
+            color: #8a9e8a;
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 1px solid #e2dcd0;
+        }
+        @media (max-width: 600px) {
+            .content { padding: 20px; }
+            h1 { font-size: 1.5rem; }
+            .care-grid { grid-template-columns: 1fr; gap: 15px; }
+            .shop-header { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="plant-image">
+        🪴 Монстера Адансона 'Манки Маск'
+    </div>
+    <div class="content">
+        <!-- Логотип и название магазина -->
+        <div class="shop-header">
+            <div class="logo-area">
+                <!-- Если логотип называется иначе или лежит в другой папке, измените src -->
+                <img src="logo.png" alt="Логотип Green Chaos" class="logo" onerror="this.style.display='none'">
+                <span class="shop-name">GREEN CHAOS</span>
+            </div>
+        </div>
+
+        <h1>Монстера Адансона 'Манки Маск'</h1>
+        <div class="latin-name">Monstera Adansonii 'Monkey Mask'</div>
+        <div class="description">Это вечнозеленая лиана, которую также называют «швейцарский сыр» за характерные отверстия в листьях. Она родом из тропических лесов Центральной и Южной Америки. Название Monkey Mask (Маска Обезьяны) отражает необычную, перфорированную форму листовой пластины. Эти яркие, глянцевые листья, достигающие 30 см в длину, делают ее настоящим украшением современного интерьера</div>
+
+        <div class="care-grid">
+            <div class="care-item">
+                <div class="care-icon">☀️</div>
+                <div class="care-label">Освещение</div>
+                <div class="care-value">Яркий, рассеянный свет</div>
+            </div>
+            <div class="care-item">
+                <div class="care-icon">💧</div>
+                <div class="care-label">Полив</div>
+                <div class="care-value">Умеренный</div>
+            </div>
+            <div class="care-item">
+                <div class="care-icon">💨</div>
+                <div class="care-label">Влажность</div>
+                <div class="care-value">Высокая, любит опрыскивание</div>
+            </div>
+        </div>
+
+        <div class="fun-fact">
+            <strong>🌿 Интересный факт:</strong> Это растение — настоящий живой барометр. Перед дождем на кончиках листьев можно заметить крошечные капельки. Таким образом монстера избавляется от лишней влаги, которую не могут испарить корни
+        </div>
+
+        <hr>
+
+        <div class="care-details">
+            <h3>📝 Подробный уход</h3>
+            <strong><em>Свет:</em></strong> Яркий рассеянный свет. Идеальное место — у восточных или западных окон с мягким утренним или вечерним солнцем. Прямые солнечные лучи могут вызвать ожоги на листьях. Лучше разместить ее вдали от окна или за легкой занавеской<br><strong><em>Температура:</em></strong> Оптимально от +18 до +25 °C. Зимой столбик термометра не должен опускаться ниже +15 °C. Боится резких сквозняков и холодных подоконников<br><strong><em>Полив:</em></strong> Умеренный, после просыхания верхнего слоя почвы на 2–3 см. Лучше ориентироваться на ощупь: почва должна быть слегка влажной, но не мокрой на ощупь. Переувлажнение губительно и ведет к гниению корней. Зимой полив сокращают<br><strong><em>Влажность воздуха:</em></strong> Высокая (50% и выше). Это растение хорошо себя чувствует на кухне или в ванной комнате с высоким уровнем влажности. Регулярные опрыскивания мягкой водой помогут поддерживать комфортный уровень влажности и предотвратят появление вредителей<br><strong><em>Почва:</em></strong> Рыхлая, воздухопроницаемая, питательная, слабокислая или нейтральная (pH 6.5-7). Идеальный вариант — готовая смесь для ароидных с добавлением перлита и сосновой коры, или универсальный грунт с добавлением перлита<br><strong><em>Подкормка:</em></strong> С весны до осени — раз в 2 недели удобрением для декоративно-лиственных растений в половинной дозировке. Зимой подкормки прекращают<br><strong><em>Пересадка:</em></strong> Молодые растения — ежегодно весной, взрослые — раз в 2 года. Горшок должен быть лишь на 2-3 см шире предыдущего<br><strong><em>Обрезка и опора:</em></strong> 'Манки Маск' — лиана, которой нужна опора (моховая палка, кокосовый столбик, решетка). Обрезку проводят для омоложения (удаляют старые, вытянувшиеся побеги) и санации (обрезают пожелтевшие, больные листья)<br><strong><em>Размножение:</em></strong> Верхушечными черенками с 2-3 междоузлиями и одним узлом. Укореняют в воде или влажном перлите, а затем высаживают в грунт<br><strong><em>Особая примета:</em></strong> Растение ядовито! Содержит кристаллы оксалата кальция, вызывающие раздражение кожи и слизистых. Все работы по уходу (обрезку, пересадку) нужно проводить в перчатках. Растение следует беречь от маленьких детей и домашних животных
+        </div>
+
+        <footer>
+            Моя коллекция растений · Уход обновлён: 24.05.2026
+        </footer>
+    </div>
+</div>
+</body>
+</html>
