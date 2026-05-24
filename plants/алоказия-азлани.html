@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Алоказия Азлани | Моя коллекция растений</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            color: #1a2e1f;
+            background-color: #fefaf5;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 24px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+        .plant-image {
+            background: linear-gradient(135deg, #e8f0e5 0%, #d4e2d0 100%);
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2d5a2c;
+            font-style: italic;
+            border-bottom: 1px solid #e2dcd0;
+        }
+        .content {
+            padding: 32px;
+        }
+        /* Стили для шапки с логотипом и названием */
+        .shop-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 2px solid #e2dcd0;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo {
+            max-height: 50px;
+            width: auto;
+        }
+        .shop-name {
+            font-size: 1.3rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #2c5f2d;
+            font-family: Georgia, serif;
+        }
+        h1 {
+            font-size: 2rem;
+            margin: 0 0 0.25rem 0;
+            color: #1a3b1a;
+            letter-spacing: -0.01em;
+        }
+        .latin-name {
+            font-style: italic;
+            color: #5a7c5a;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+        .description {
+            color: #4a5e4a;
+            margin-bottom: 1.5rem;
+        }
+        .care-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 20px 0;
+            background-color: #f9f6f0;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .care-item {
+            text-align: center;
+        }
+        .care-icon {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+        .care-label {
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #5a7c5a;
+            margin-bottom: 4px;
+        }
+        .care-value {
+            font-size: 0.9rem;
+            color: #2c3e2d;
+        }
+        .fun-fact {
+            background-color: #f0f4ea;
+            padding: 16px;
+            border-radius: 20px;
+            margin: 20px 0;
+            font-size: 0.95rem;
+            border-left: 4px solid #5a7c5a;
+        }
+        hr {
+            margin: 24px 0;
+            border: none;
+            height: 1px;
+            background-color: #e2dcd0;
+        }
+        .care-details {
+            margin-top: 20px;
+        }
+        .care-details h3 {
+            margin-bottom: 12px;
+            color: #1a3b1a;
+        }
+        .care-details p {
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            color: #4a5e4a;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.75rem;
+            color: #8a9e8a;
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 1px solid #e2dcd0;
+        }
+        @media (max-width: 600px) {
+            .content { padding: 20px; }
+            h1 { font-size: 1.5rem; }
+            .care-grid { grid-template-columns: 1fr; gap: 15px; }
+            .shop-header { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="plant-image">
+        🪴 Алоказия Азлани
+    </div>
+    <div class="content">
+        <!-- Логотип и название магазина -->
+        <div class="shop-header">
+            <div class="logo-area">
+                <!-- Если логотип называется иначе или лежит в другой папке, измените src -->
+                <img src="logo.png" alt="Логотип Green Chaos" class="logo" onerror="this.style.display='none'">
+                <span class="shop-name">GREEN CHAOS</span>
+            </div>
+        </div>
+
+        <h1>Алоказия Азлани</h1>
+        <div class="latin-name">Alocasia Azlanii</div>
+        <div class="description">Это низкорослое (до 10–28 см) королевство алоказий с уникальным металлическим отливом. Впервые описанный лишь в 2016 году, этот редкий вид с острова Борнео покоряет бархатистыми листьями, которые переливаются оттенками от глубокого медно-пурпурного до почти черного с яркими розово-пурпурными прожилками. Истинное украшение коллекции и природная драгоценность</div>
+
+        <div class="care-grid">
+            <div class="care-item">
+                <div class="care-icon">☀️</div>
+                <div class="care-label">Освещение</div>
+                <div class="care-value">Яркий, рассеянный свет</div>
+            </div>
+            <div class="care-item">
+                <div class="care-icon">💧</div>
+                <div class="care-label">Полив</div>
+                <div class="care-value">Умеренный</div>
+            </div>
+            <div class="care-item">
+                <div class="care-icon">💨</div>
+                <div class="care-label">Влажность</div>
+                <div class="care-value">Высокая, любит опрыскивание</div>
+            </div>
+        </div>
+
+        <div class="fun-fact">
+            <strong>🌿 Интересный факт:</strong> Название Alocasia Azlanii было присвоено растению в честь коллекционера Азлана Пандаи (Azlan Pandai), чья страсть к поиску растений и помощь исследователям привели к этому открытию. При этом даже сегодня этот вид остается настоящим «белым китом» для коллекционеров, а мошенники часто продают вместо него похожие виды — Alocasia Cuprea, Alocasia Infernalis
+        </div>
+
+        <hr>
+
+        <div class="care-details">
+            <h3>📝 Подробный уход</h3>
+            <strong><em>Свет:</em></strong> Яркий рассеянный, будет благодарна за несколько часов мягкого утреннего солнца. Прямые солнечные лучи обжигают нежные листья и «смывают» их уникальный металлический отлив. Отлично растет при полностью искусственном освещении (фитолампах)<br><strong><em>Температура:</em></strong> Оптимально от +20 до +27 °C. Зимой столбик термометра не должен опускаться ниже +18 °C. Категорически не переносит холодные сквозняки и резкие перепады температур<br><strong><em>Полив:</em></strong> Умеренный, после просыхания верхнего слоя почвы на 2-3 см. Лучше немного недолить, чем залить, так как переувлажнение — верный путь к корневой гнили. Зимой полив значительно сокращают, но не допускают полного пересыхания земляного кома<br><strong><em>Влажность воздуха:</em></strong> Тропическая красавица нуждается в очень высокой влажности (60–80%). Идеальный вариант — увлажнитель воздуха, но можно добиться желаемого регулярными опрыскиваниями мягкой водой, теплым душем, размещением на поддоне с влажным керамзитом или в окружении других растений<br><strong><em>Почва:</em></strong> Рыхлая, очень воздухопроницаемая, слабокислая (pH 5.5–6.5). Идеальна специальная готовая смесь для ароидных, в которую для дополнительной рыхлости стоит добавить перлит, кору и сфагнум. Обязателен дренаж на дне горшка<br><strong><em>Подкормка:</em></strong> С весны до осени — раз в 2–3 недели комплексным удобрением для декоративно-лиственных растений в половинной концентрации. Зимой подкормки прекращают<br><strong><em>Пересадка:</em></strong> Молодые растения пересаживают ежегодно весной, взрослые — раз в 2 года или по мере оплетения корнями горшка. Горшок должен быть лишь на 2–3 см шире предыдущего, иначе в слишком просторной емкости легко закиснуть непросушенной почве<br><strong><em>Обрезка и опора:</em></strong> В санитарной обрезке и специальной опоре не нуждается. Достаточно удалять старые, пожелтевшие или поврежденные листья, чтобы стимулировать рост новых и поддерживать декоративность<br><strong><em>Размножение:</em></strong> Делением корневища или отделением дочерних клубней (деток) во время весенней пересадки. Черенками не размножается<br><strong><em>Особая примета:</em></strong> Растение ядовито! Сок алоказии содержит кристаллы оксалата кальция, вызывающие сильное раздражение кожи и слизистых. Все работы по уходу проводите в перчатках и обязательно мойте руки, а также берегите растение от детей и домашних животных
+        </div>
+
+        <footer>
+            Моя коллекция растений · Уход обновлён: 24.05.2026
+        </footer>
+    </div>
+</div>
+</body>
+</html>
