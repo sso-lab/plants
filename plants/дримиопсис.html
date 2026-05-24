@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дримиопсис | Моя коллекция растений</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            color: #1a2e1f;
+            background-color: #fefaf5;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 24px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+        .plant-image {
+            background: linear-gradient(135deg, #e8f0e5 0%, #d4e2d0 100%);
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2d5a2c;
+            font-style: italic;
+            border-bottom: 1px solid #e2dcd0;
+        }
+        .content {
+            padding: 32px;
+        }
+        /* Стили для шапки с логотипом и названием */
+        .shop-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 2px solid #e2dcd0;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo {
+            max-height: 50px;
+            width: auto;
+        }
+        .shop-name {
+            font-size: 1.3rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #2c5f2d;
+            font-family: Georgia, serif;
+        }
+        h1 {
+            font-size: 2rem;
+            margin: 0 0 0.25rem 0;
+            color: #1a3b1a;
+            letter-spacing: -0.01em;
+        }
+        .latin-name {
+            font-style: italic;
+            color: #5a7c5a;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+        .description {
+            color: #4a5e4a;
+            margin-bottom: 1.5rem;
+        }
+        .care-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 20px 0;
+            background-color: #f9f6f0;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .care-item {
+            text-align: center;
+        }
+        .care-icon {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+        .care-label {
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #5a7c5a;
+            margin-bottom: 4px;
+        }
+        .care-value {
+            font-size: 0.9rem;
+            color: #2c3e2d;
+        }
+        .fun-fact {
+            background-color: #f0f4ea;
+            padding: 16px;
+            border-radius: 20px;
+            margin: 20px 0;
+            font-size: 0.95rem;
+            border-left: 4px solid #5a7c5a;
+        }
+        hr {
+            margin: 24px 0;
+            border: none;
+            height: 1px;
+            background-color: #e2dcd0;
+        }
+        .care-details {
+            margin-top: 20px;
+        }
+        .care-details h3 {
+            margin-bottom: 12px;
+            color: #1a3b1a;
+        }
+        .care-details p {
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            color: #4a5e4a;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.75rem;
+            color: #8a9e8a;
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 1px solid #e2dcd0;
+        }
+        @media (max-width: 600px) {
+            .content { padding: 20px; }
+            h1 { font-size: 1.5rem; }
+            .care-grid { grid-template-columns: 1fr; gap: 15px; }
+            .shop-header { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="plant-image">
+        🪴 Дримиопсис
+    </div>
+    <div class="content">
+        <!-- Логотип и название магазина -->
+        <div class="shop-header">
+            <div class="logo-area">
+                <!-- Если логотип называется иначе или лежит в другой папке, измените src -->
+                <img src="logo.png" alt="Логотип Green Chaos" class="logo" onerror="this.style.display='none'">
+                <span class="shop-name">GREEN CHAOS</span>
+            </div>
+        </div>
+
+        <h1>Дримиопсис</h1>
+        <div class="latin-name">Drimiopsis</div>
+        <div class="description">Это многолетнее луковичное растение, которое часто путают с Ледебурией (Ledebouria) — торговое название «Ледебурия» тоже широко распространено. Его главное украшение — это сердцевидные или ланцетные листья, покрытые выразительными темными пятнами на светло-зеленом фоне, за что в народе его прозвали «Африканской хостой». Цветет невзрачными, но ароматными мелкими цветками, собранными в колос, которые напоминают мускари</div>
+
+        <div class="care-grid">
+            <div class="care-item">
+                <div class="care-icon">☀️</div>
+                <div class="care-label">Освещение</div>
+                <div class="care-value">Яркий, рассеянный свет</div>
+            </div>
+            <div class="care-item">
+                <div class="care-icon">💧</div>
+                <div class="care-label">Полив</div>
+                <div class="care-value">Умеренный</div>
+            </div>
+            <div class="care-item">
+                <div class="care-icon">💨</div>
+                <div class="care-label">Влажность</div>
+                <div class="care-value">Обычная комнатная</div>
+            </div>
+        </div>
+
+        <div class="fun-fact">
+            <strong>🌿 Интересный факт:</strong> У дримиопсиса есть одна удивительная особенность: его листья могут терять и снова проявлять свой пятнистый узор, как живые хамелеоны. Яркие темные пятна появляются только весной и в начале лета на молодых листьях. Когда растение переходит в фазу активного роста и цветения, украшения становятся максимально заметными. Но к концу лета, с уменьшением светового дня, листья постепенно теряют крап, становясь равномерно зелеными, а ближе к осени часто засыхают и вовсе отмирают, подготавливая луковицу к зимнему покою. Именно поэтому в разное время года растение может выглядеть так по-разному: то как нарядный горошек-пятнишка, то просто как скромный кустик сочной зелени
+        </div>
+
+        <hr>
+
+        <div class="care-details">
+            <h3>📝 Подробный уход</h3>
+            <strong><em>Свет:</em></strong> Нуждается в ярком рассеянном свете или мягком солнце (например, на окнах восточной или западной экспозиции). Прямые лучи в полдень могут вызвать ожоги листьев. При недостатке света пятнистый узор бледнеет, а растение теряет декоративность. Лучше всего окраска листьев проявляется именно при обильном, но рассеянном освещении<br><strong><em>Температура:</em></strong> Оптимальный диапазон — от +18 до +27 °C. Зимой, в период покоя, температуру желательно снизить до +12...+15 °C, чтобы дать растению отдохнуть. Важно, чтобы понижение температуры не сопровождалось переувлажнением почвы, иначе луковица может загнить<br><strong><em>Полив:</em></strong> Дримиопсис — луковичное растение с запасом влаги, поэтому он более устойчив к засухе, чем к переувлажнению. Главное правило: поливайте умеренно, только после того, как верхний слой почвы просохнет на 2-3 см. Летом полив регулярный, но без застоя воды. Зимой полив заметно сокращают, особенно если растение находится в прохладе<br><strong><em>Влажность воздуха:</em></strong> Дримиопсис совершенно нетребователен к влажности и прекрасно адаптируется к сухому воздуху обычных квартир. Опрыскивания ему не нужны и даже могут навредить, если влага будет застаиваться в пазухах листьев. Достаточно изредка протирать листья от пыли влажной губкой<br><strong><em>Почва:</em></strong> Требуется легкий, воздухопроницаемый субстрат. Идеальный pH — 6.0–7.0 (нейтральный или слабокислый). Состав: дерновая земля : листовая земля : перегной : песок (1:1:1:1) с добавлением кусочков древесного угля и вермикулита. На дне горшка обязателен дренаж. Грунт не должен быть слишком гумусным, чтобы луковицы не разрастались чрезмерно<br><strong><em>Подкормка:</em></strong> Подкармливают только в период активной вегетации (с весны до осени) 1 раз в 3-4 недели комплексным удобрением для декоративно-лиственных растений в половинной дозировке. Зимой подкормки прекращают<br><strong><em>Пересадка:</em></strong> Молодые растения — ежегодно весной. Взрослые экземпляры с разросшимся гнездом луковиц пересаживают раз в 2-3 года или когда корни полностью оплетут земляной ком. Горшок должен быть небольшим, с широким дренажным отверстием. При посадке луковицы нельзя сильно заглублять — они предпочитают находиться на уровне земли или немного выступать над поверхностью, а их шейка не должна быть засыпана грунтом<br><strong><em>Обрезка и опора:</em></strong> В опоре не нуждается. Обрезка — только санитарная: удаление старых, пожелтевших или засохших листьев<br><strong><em>Размножение:</em></strong> Делением луковиц при пересадке. Дримиопсис образует много дочерних луковиц, которые легко отделить и посадить в отдельные горшки. Можно размножать и листовыми черенками, но этот способ менее надежен<br><strong><em>Особая примета:</em></strong> Сок луковицы вызывает раздражение кожи рук, поэтому все работы с растением (особенно пересадку) лучше проводить в перчатках. Само растение обычно не вызывает серьезного отравления у животных и людей
+        </div>
+
+        <footer>
+            Моя коллекция растений · Уход обновлён: 24.05.2026
+        </footer>
+    </div>
+</div>
+</body>
+</html>
