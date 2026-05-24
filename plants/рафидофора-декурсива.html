@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рафидофора Декурсива | Моя коллекция растений</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            color: #1a2e1f;
+            background-color: #fefaf5;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 24px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+        .plant-image {
+            background: linear-gradient(135deg, #e8f0e5 0%, #d4e2d0 100%);
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2d5a2c;
+            font-style: italic;
+            border-bottom: 1px solid #e2dcd0;
+        }
+        .content {
+            padding: 32px;
+        }
+        /* Стили для шапки с логотипом и названием */
+        .shop-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 2px solid #e2dcd0;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo {
+            max-height: 50px;
+            width: auto;
+        }
+        .shop-name {
+            font-size: 1.3rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #2c5f2d;
+            font-family: Georgia, serif;
+        }
+        h1 {
+            font-size: 2rem;
+            margin: 0 0 0.25rem 0;
+            color: #1a3b1a;
+            letter-spacing: -0.01em;
+        }
+        .latin-name {
+            font-style: italic;
+            color: #5a7c5a;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+        .description {
+            color: #4a5e4a;
+            margin-bottom: 1.5rem;
+        }
+        .care-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 20px 0;
+            background-color: #f9f6f0;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .care-item {
+            text-align: center;
+        }
+        .care-icon {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+        .care-label {
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #5a7c5a;
+            margin-bottom: 4px;
+        }
+        .care-value {
+            font-size: 0.9rem;
+            color: #2c3e2d;
+        }
+        .fun-fact {
+            background-color: #f0f4ea;
+            padding: 16px;
+            border-radius: 20px;
+            margin: 20px 0;
+            font-size: 0.95rem;
+            border-left: 4px solid #5a7c5a;
+        }
+        hr {
+            margin: 24px 0;
+            border: none;
+            height: 1px;
+            background-color: #e2dcd0;
+        }
+        .care-details {
+            margin-top: 20px;
+        }
+        .care-details h3 {
+            margin-bottom: 12px;
+            color: #1a3b1a;
+        }
+        .care-details p {
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            color: #4a5e4a;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.75rem;
+            color: #8a9e8a;
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 1px solid #e2dcd0;
+        }
+        @media (max-width: 600px) {
+            .content { padding: 20px; }
+            h1 { font-size: 1.5rem; }
+            .care-grid { grid-template-columns: 1fr; gap: 15px; }
+            .shop-header { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="plant-image">
+        🪴 Рафидофора Декурсива
+    </div>
+    <div class="content">
+        <!-- Логотип и название магазина -->
+        <div class="shop-header">
+            <div class="logo-area">
+                <!-- Если логотип называется иначе или лежит в другой папке, измените src -->
+                <img src="logo.png" alt="Логотип Green Chaos" class="logo" onerror="this.style.display='none'">
+                <span class="shop-name">GREEN CHAOS</span>
+            </div>
+        </div>
+
+        <h1>Рафидофора Декурсива</h1>
+        <div class="latin-name">Rhaphidophora Decursiva</div>
+        <div class="description">Рафидофора Декурсива (Rhaphidophora Decursiva) — эффектная тропическая лиана, которую из-за ее крупных, глубоко рассеченных листьев часто называют «драконьим хвостом». В дикой природе эти лианы взбираются по стволам деревьев на высоту до 15–20 метров, а листья со временем становятся все более изрезанными и напоминают пальмовые флаги. В домашних условиях обычно достигает 2,5 м и прекрасно смотрится на опоре, привнося в интерьер атмосферу настоящих джунглей</div>
+
+        <div class="care-grid">
+            <div class="care-item">
+                <div class="care-icon">☀️</div>
+                <div class="care-label">Освещение</div>
+                <div class="care-value">Яркий, рассеянный свет</div>
+            </div>
+            <div class="care-item">
+                <div class="care-icon">💧</div>
+                <div class="care-label">Полив</div>
+                <div class="care-value">Умеренный</div>
+            </div>
+            <div class="care-item">
+                <div class="care-icon">💨</div>
+                <div class="care-label">Влажность</div>
+                <div class="care-value">Высокая, любит опрыскивание</div>
+            </div>
+        </div>
+
+        <div class="fun-fact">
+            <strong>🌿 Интересный факт:</strong> Рафидофора Декурсива широко используется в традиционной медицине Юго-Восточной Азии. В народной медицине Вьетнама листья и стебли этого растения в виде отваров и припарок применяют для лечения ран, ожогов, переломов, фурункулов и даже кожного зуда. Исследования показали, что экстракты стеблей Rhaphidophora Decursiva проявляют выраженную антибактериальную активность против таких опасных патогенов, как золотистый стафилококк, синегнойная палочка и пиогенный стрептококк
+        </div>
+
+        <hr>
+
+        <div class="care-details">
+            <h3>📝 Подробный уход</h3>
+            <strong><em>Свет:</em></strong> Яркий рассеянный свет. Идеальное место — у окон восточной или западной ориентации. При дефиците света междоузлия вытягиваются, листья мельчают, а характерные разрезы на листовых пластинах становятся менее выраженными. Прямые солнечные лучи вызывают ожоги<br><strong><em>Температура:</em></strong> Оптимальный диапазон — от +18 до +25°C. Зимой столбик термометра не должен опускаться ниже +13°C. Растение теплолюбиво, но плохо переносит жару выше +30°C. Берегите от холодных сквозняков и резких перепадов температур<br><strong><em>Полив:</em></strong> Умеренный, после просыхания верхнего слоя почвы на 2–3 см. Земляной ком должен равномерно просыхать между поливами, но нельзя допускать полного пересыхания всего объема грунта. Переувлажнение губительно — ведет к загниванию корней и появлению желтых пятен на листьях<br><strong><em>Влажность воздуха:</em></strong> Высокая (60% и выше). В сухом воздухе кончики листьев подсыхают и темнеют. Регулярные опрыскивания мягкой водой, теплый душ, поддон с влажным керамзитом или увлажнитель воздуха помогут создать комфортный микроклимат<br><strong><em>Почва:</em></strong> Рыхлая, воздухопроницаемая, нейтральная или слабокислая. Корни не любят плотных, «тяжёлых» субстратов. Идеальна готовая смесь для ароидных или лиан, либо универсальный грунт с добавлением перлита, кусочков коры и мха сфагнума<br><strong><em>Подкормка:</em></strong> С весны до осени — раз в 3–4 недели комплексным удобрением для декоративно-лиственных растений в половинной дозировке. Зимой подкормки прекращают<br><strong><em>Пересадка:</em></strong> Молодые растения пересаживают ежегодно весной, взрослые — раз в 2–3 года по мере оплетения корнями земляного кома. Горшок должен быть лишь на 2–3 см шире предыдущего, а на дне обязателен дренаж<br><strong><em>Обрезка и опора:</em></strong> Как лиана нуждается в прочной опоре (моховая палка, кокосовый столбик, решетка), иначе побеги будут стелиться по земле, а листья — мельчать. Регулярная прищипка верхушек стимулирует ветвление. Удаляйте старые, пожелтевшие и поврежденные листья<br><strong><em>Размножение:</em></strong> Верхушечными и стеблевыми черенками с 2–3 междоузлиями. Легче всего укоренять черенки в теплой воде, меняя ее раз в 3–4 дня. Корни появляются через 3–6 недель. Можно укоренять и во влажном перлите, сфагнуме или смеси торфа с песком<br><strong><em>Особая примета:</em></strong> Растение ядовито! Содержит кристаллы оксалата кальция, вызывающие раздражение кожи и слизистых. Все работы по уходу проводите в перчатках, тщательно мойте руки и берегите растение от детей и домашних животных
+        </div>
+
+        <footer>
+            Моя коллекция растений · Уход обновлён: 24.05.2026
+        </footer>
+    </div>
+</div>
+</body>
+</html>
