@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калатея Гибрид 'Елоу Фьюжн' | Моя коллекция растений</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            color: #1a2e1f;
+            background-color: #fefaf5;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 24px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+        .plant-image {
+            background: linear-gradient(135deg, #e8f0e5 0%, #d4e2d0 100%);
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2d5a2c;
+            font-style: italic;
+            border-bottom: 1px solid #e2dcd0;
+        }
+        .content {
+            padding: 32px;
+        }
+        /* Стили для шапки с логотипом и названием */
+        .shop-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 2px solid #e2dcd0;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo {
+            max-height: 50px;
+            width: auto;
+        }
+        .shop-name {
+            font-size: 1.3rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #2c5f2d;
+            font-family: Georgia, serif;
+        }
+        h1 {
+            font-size: 2rem;
+            margin: 0 0 0.25rem 0;
+            color: #1a3b1a;
+            letter-spacing: -0.01em;
+        }
+        .latin-name {
+            font-style: italic;
+            color: #5a7c5a;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+        .description {
+            color: #4a5e4a;
+            margin-bottom: 1.5rem;
+        }
+        .care-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 20px 0;
+            background-color: #f9f6f0;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .care-item {
+            text-align: center;
+        }
+        .care-icon {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+        .care-label {
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #5a7c5a;
+            margin-bottom: 4px;
+        }
+        .care-value {
+            font-size: 0.9rem;
+            color: #2c3e2d;
+        }
+        .fun-fact {
+            background-color: #f0f4ea;
+            padding: 16px;
+            border-radius: 20px;
+            margin: 20px 0;
+            font-size: 0.95rem;
+            border-left: 4px solid #5a7c5a;
+        }
+        hr {
+            margin: 24px 0;
+            border: none;
+            height: 1px;
+            background-color: #e2dcd0;
+        }
+        .care-details {
+            margin-top: 20px;
+        }
+        .care-details h3 {
+            margin-bottom: 12px;
+            color: #1a3b1a;
+        }
+        .care-details p {
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            color: #4a5e4a;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.75rem;
+            color: #8a9e8a;
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 1px solid #e2dcd0;
+        }
+        @media (max-width: 600px) {
+            .content { padding: 20px; }
+            h1 { font-size: 1.5rem; }
+            .care-grid { grid-template-columns: 1fr; gap: 15px; }
+            .shop-header { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="plant-image">
+        🪴 Калатея Гибрид 'Елоу Фьюжн'
+    </div>
+    <div class="content">
+        <!-- Логотип и название магазина -->
+        <div class="shop-header">
+            <div class="logo-area">
+                <!-- Если логотип называется иначе или лежит в другой папке, измените src -->
+                <img src="logo.png" alt="Логотип Green Chaos" class="logo" onerror="this.style.display='none'">
+                <span class="shop-name">GREEN CHAOS</span>
+            </div>
+        </div>
+
+        <h1>Калатея Гибрид 'Елоу Фьюжн'</h1>
+        <div class="latin-name">Calathea Hybrid 'Yellow Fusion'</div>
+        <div class="description">Это редкий гибридный сорт калатеи Луиза, созданный селекционерами в Индонезии. Главное достоинство растения — его невероятные листья, каждый из которых представляет собой уникальный «холст» с мраморным узором из сочных зеленых и ярких лимонно-желтых мазков. Обратная сторона листьев отливает благородным пурпурным цветом. Этот компактный вечнозеленый многолетник вырастает до 30–60 см в высоту и формирует раскидистый куст, что делает его идеальным акцентом для любого интерьера</div>
+
+        <div class="care-grid">
+            <div class="care-item">
+                <div class="care-icon">☀️</div>
+                <div class="care-label">Освещение</div>
+                <div class="care-value">Яркий, рассеянный свет</div>
+            </div>
+            <div class="care-item">
+                <div class="care-icon">💧</div>
+                <div class="care-label">Полив</div>
+                <div class="care-value">Умеренный</div>
+            </div>
+            <div class="care-item">
+                <div class="care-icon">💨</div>
+                <div class="care-label">Влажность</div>
+                <div class="care-value">Высокая, любит опрыскивание</div>
+            </div>
+        </div>
+
+        <div class="fun-fact">
+            <strong>🌿 Интересный факт:</strong> Это растение — еще одно доказательство того, как популярность может создать острый дефицит. Этот редкий сорт, завезенный в Европу из Индонезии, завоевал такую бешеную популярность среди коллекционеров, что найти его в продаже стало невероятно сложно. И это несмотря на то, что, по отзывам, по своей неприхотливости он превосходит своего знаменитого «родственника» — калатею 'White Fusion'. Созданный в Азии, он покоряет мир своей экзотической красотой, оставаясь при этом желанным, но редким гостем в домах по всему земному шару
+        </div>
+
+        <hr>
+
+        <div class="care-details">
+            <h3>📝 Подробный уход</h3>
+            <strong><em>Свет:</em></strong> Очень яркий рассеянный. Для сохранения яркой желто-зеленой вариегатности этому сорту нужно больше света, чем другим калатеям. Идеальное место — восточные или западные окна с мягким утренним или вечерним солнцем. От прямых солнечных лучей листья получают ожоги и бледнеют. При недостатке света рост замедляется, а желтые пятна на листьях могут исчезнуть<br><strong><em>Температура:</em></strong> Оптимально от +18 до +26 °C. Следует избегать резких перепадов температур и холодных сквозняков. При температуре ниже +15 °C растение может заболеть<br><strong><em>Полив:</em></strong> Умеренный, но регулярный, поддерживая почву в постоянно слегка влажном состоянии. Воду используют мягкую, отстоянную, фильтрованную или дождевую, так как калатеи чувствительны к хлору и фтору. Категорически не допускается застой воды в поддоне<br><strong><em>Влажность воздуха:</em></strong> Высокая (50-80%). Идеально использовать увлажнитель воздуха, разместить горшок на поддоне с влажным керамзитом или поставить калатею в окружении других растений. Прямые опрыскивания могут оставить пятна на нежных листьях или вызвать грибковые заболевания. Пыль с листьев рекомендуется аккуратно удалять мягкой влажной губкой<br><strong><em>Почва:</em></strong> Рыхлая, питательная, воздухопроницаемая, слабокислая. Идеально подходит готовая смесь для марантовых или сенполий. Можно приготовить субстрат самостоятельно: смешать верховой торф, листовую землю, перлит, вермикулит и добавить кусочки сосновой коры для рыхлости. Обязателен дренаж и горшок с дренажными отверстиями<br><strong><em>Подкормка:</em></strong> С весны до осени — раз в 3–4 недели комплексным удобрением для декоративно-лиственных растений, разведенным в половинной концентрации. Зимой подкормки прекращают<br><strong><em>Пересадка:</em></strong> Молодые растения — ежегодно весной, взрослые — раз в 2 года при необходимости. Горшок выбирают широкий и невысокий, на 2–3 см шире предыдущего<br><strong><em>Обрезка и опора:</em></strong> В опоре не нуждается. Обрезка — санитарная, для удаления старых, пожелтевших или поврежденных листьев<br><strong><em>Размножение:</em></strong> Делением корневища при весенней пересадке<br><strong><em>Особая примета:</em></strong> Растение не ядовито. Оно безопасно для детей и домашних животных
+        </div>
+
+        <footer>
+            Моя коллекция растений · Уход обновлён: 24.05.2026
+        </footer>
+    </div>
+</div>
+</body>
+</html>
