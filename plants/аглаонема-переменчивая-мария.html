@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аглаонема Переменчивая 'Мария' | Моя коллекция растений</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            color: #1a2e1f;
+            background-color: #fefaf5;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 24px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+        .plant-image {
+            background: linear-gradient(135deg, #e8f0e5 0%, #d4e2d0 100%);
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2d5a2c;
+            font-style: italic;
+            border-bottom: 1px solid #e2dcd0;
+        }
+        .content {
+            padding: 32px;
+        }
+        /* Стили для шапки с логотипом и названием */
+        .shop-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 2px solid #e2dcd0;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo {
+            max-height: 50px;
+            width: auto;
+        }
+        .shop-name {
+            font-size: 1.3rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #2c5f2d;
+            font-family: Georgia, serif;
+        }
+        h1 {
+            font-size: 2rem;
+            margin: 0 0 0.25rem 0;
+            color: #1a3b1a;
+            letter-spacing: -0.01em;
+        }
+        .latin-name {
+            font-style: italic;
+            color: #5a7c5a;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+        .description {
+            color: #4a5e4a;
+            margin-bottom: 1.5rem;
+        }
+        .care-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 20px 0;
+            background-color: #f9f6f0;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .care-item {
+            text-align: center;
+        }
+        .care-icon {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+        .care-label {
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #5a7c5a;
+            margin-bottom: 4px;
+        }
+        .care-value {
+            font-size: 0.9rem;
+            color: #2c3e2d;
+        }
+        .fun-fact {
+            background-color: #f0f4ea;
+            padding: 16px;
+            border-radius: 20px;
+            margin: 20px 0;
+            font-size: 0.95rem;
+            border-left: 4px solid #5a7c5a;
+        }
+        hr {
+            margin: 24px 0;
+            border: none;
+            height: 1px;
+            background-color: #e2dcd0;
+        }
+        .care-details {
+            margin-top: 20px;
+        }
+        .care-details h3 {
+            margin-bottom: 12px;
+            color: #1a3b1a;
+        }
+        .care-details p {
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            color: #4a5e4a;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.75rem;
+            color: #8a9e8a;
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 1px solid #e2dcd0;
+        }
+        @media (max-width: 600px) {
+            .content { padding: 20px; }
+            h1 { font-size: 1.5rem; }
+            .care-grid { grid-template-columns: 1fr; gap: 15px; }
+            .shop-header { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="plant-image">
+        🪴 Аглаонема Переменчивая 'Мария'
+    </div>
+    <div class="content">
+        <!-- Логотип и название магазина -->
+        <div class="shop-header">
+            <div class="logo-area">
+                <!-- Если логотип называется иначе или лежит в другой папке, измените src -->
+                <img src="logo.png" alt="Логотип Green Chaos" class="logo" onerror="this.style.display='none'">
+                <span class="shop-name">GREEN CHAOS</span>
+            </div>
+        </div>
+
+        <h1>Аглаонема Переменчивая 'Мария'</h1>
+        <div class="latin-name">Aglaonema Commutatum 'Maria'</div>
+        <div class="description">Это компактное, медленнорастущее вечнозеленое растение с крупными овальными листьями, на которых темно-зелёные и серебристо-серые пятна образуют эффектный мраморный узор. В отличие от пестролистных аглаонем, требующих яркого света, «Мария» славится своей уникальной теневыносливостью — растет даже у северных окон и в глубине комнат, где другие растения гибнут. Прощает редкий полив, редко болеет и не нуждается в опоре. Идеальное растение для начинающих, офисов и помещений с недостатком естественного света.</div>
+
+        <div class="care-grid">
+            <div class="care-item">
+                <div class="care-icon">☀️</div>
+                <div class="care-label">Освещение</div>
+                <div class="care-value">Яркий, рассеянный свет</div>
+            </div>
+            <div class="care-item">
+                <div class="care-icon">💧</div>
+                <div class="care-label">Полив</div>
+                <div class="care-value">Умеренный</div>
+            </div>
+            <div class="care-item">
+                <div class="care-icon">💨</div>
+                <div class="care-label">Влажность</div>
+                <div class="care-value">Высокая, любит опрыскивание</div>
+            </div>
+        </div>
+
+        <div class="fun-fact">
+            <strong>🌿 Интересный факт:</strong> Аглаонема «Мария» — одна из немногих комнатных культур, которая была официально признана НАСА как эффективный очиститель воздуха. В знаменитом исследовании «Чистый воздух» 1989 года аглаонемы (включая близкие к «Марии» сорта) показали способность снижать концентрацию бензола, формальдегида и других летучих органических соединений в замкнутых помещениях на 50–70%. В Китае, на родине аглаонем, их называют «китайским вечнозеленым» и веками выращивают в домах как живые фильтры и талисманы, приносящие удачу. При этом сок растения ядовит — в древности его добавляли в стрелы, а сегодня достаточно просто мыть руки после пересадки
+        </div>
+
+        <hr>
+
+        <div class="care-details">
+            <h3>📝 Подробный уход</h3>
+            <strong><em>Свет:</em></strong> Хорошо себя чувствует при рассеянном освещении, превосходно адаптируется к полутени и тени. Отлично подходит для северных окон и мест в глубине комнаты, но может жить и при искусственном освещении. Прямые солнечные лучи могут оставить ожоги на листьях. В отличие от пестрых видов, сорт «Мария» не потеряет свою красоту даже в плохо освещенных местах<br><strong><em>Температура:</em></strong> Оптимально +20…+25 °C. Зимой не рекомендуется опускать температуру ниже +16 °C. Боится холодных сквозняков и резких перепадов температуры<br><strong><em>Полив:</em></strong> Умеренный, после просыхания верхнего слоя почвы (2–3 см). Весной и летом поливают 2-3 раза в неделю, осенью и зимой достаточно одного раза. Аглаонема довольно терпелива к пересушке и способна выдержать засуху до двух недель, однако заливать растение нельзя — это вызовет гниение корней<br><strong><em>Влажность воздуха:</em></strong> Предпочитает среднюю или высокую влажность. Будет благодарна за регулярные опрыскивания мягкой теплой водой или размещение рядом с увлажнителем воздуха. При слишком сухом воздухе кончики листьев могут подсыхать<br><strong><em>Почва:</em></strong> Рыхлая, питательная, слабокислая или нейтральная (pH 5,5–6,5). Идеально подходит готовая смесь для ароидных, либо смесь из дерновой земли, торфа и песка (2:2:1). Обязателен хороший дренаж на дне горшка<br><strong><em>Подкормка:</em></strong> С марта по октябрь — раз в 2-4 недели жидким удобрением для декоративно-лиственных растений в половинной дозировке. После пересадки в свежий грунт подкормки начинают вносить не ранее чем через два месяца<br><strong><em>Пересадка:</em></strong> Молодые растения пересаживают ежегодно весной, взрослые — раз в 2-3 года или по мере оплетения корнями горшка. Горшок должен быть лишь на пару сантиметров шире предыдущего, так как в тесной таре аглаонема чувствует себя лучше и активнее растет<br><strong><em>Обрезка и опора:</em></strong> Обрезку проводят в санитарных целях, удаляя старые и поврежденные листья. Раз в 3-4 года можно проводить полное омоложение кроны, обрезая стебли. Как невысокое компактное кустовое растение, аглаонема в опоре не нуждается<br><strong><em>Размножение:</em></strong> Проще всего размножать верхушечными или стеблевыми черенками весной или летом. Черенки укореняют во влажном перлите, сфагнуме или легком грунте. Также можно размножать делением куста при пересадке<br><strong><em>Особая примета:</em></strong> Аглаонема «Мария» — это природный очиститель воздуха: как и другие растения этого рода, она способна уменьшать содержание бензола в помещении, делая атмосферу дома чище и здоровее. Помните, что сок аглаонемы ядовит, поэтому все работы с растением проводите в перчатках и тщательно мойте руки после контакта с ним
+        </div>
+
+        <footer>
+            Моя коллекция растений · Уход обновлён: 24.05.2026
+        </footer>
+    </div>
+</div>
+</body>
+</html>
