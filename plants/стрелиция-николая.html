@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стрелиция Николая | Моя коллекция растений</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            color: #1a2e1f;
+            background-color: #fefaf5;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 24px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+        .plant-image {
+            background: linear-gradient(135deg, #e8f0e5 0%, #d4e2d0 100%);
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2d5a2c;
+            font-style: italic;
+            border-bottom: 1px solid #e2dcd0;
+        }
+        .content {
+            padding: 32px;
+        }
+        /* Стили для шапки с логотипом и названием */
+        .shop-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 2px solid #e2dcd0;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo {
+            max-height: 50px;
+            width: auto;
+        }
+        .shop-name {
+            font-size: 1.3rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #2c5f2d;
+            font-family: Georgia, serif;
+        }
+        h1 {
+            font-size: 2rem;
+            margin: 0 0 0.25rem 0;
+            color: #1a3b1a;
+            letter-spacing: -0.01em;
+        }
+        .latin-name {
+            font-style: italic;
+            color: #5a7c5a;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+        .description {
+            color: #4a5e4a;
+            margin-bottom: 1.5rem;
+        }
+        .care-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 20px 0;
+            background-color: #f9f6f0;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .care-item {
+            text-align: center;
+        }
+        .care-icon {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+        .care-label {
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #5a7c5a;
+            margin-bottom: 4px;
+        }
+        .care-value {
+            font-size: 0.9rem;
+            color: #2c3e2d;
+        }
+        .fun-fact {
+            background-color: #f0f4ea;
+            padding: 16px;
+            border-radius: 20px;
+            margin: 20px 0;
+            font-size: 0.95rem;
+            border-left: 4px solid #5a7c5a;
+        }
+        hr {
+            margin: 24px 0;
+            border: none;
+            height: 1px;
+            background-color: #e2dcd0;
+        }
+        .care-details {
+            margin-top: 20px;
+        }
+        .care-details h3 {
+            margin-bottom: 12px;
+            color: #1a3b1a;
+        }
+        .care-details p {
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            color: #4a5e4a;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.75rem;
+            color: #8a9e8a;
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 1px solid #e2dcd0;
+        }
+        @media (max-width: 600px) {
+            .content { padding: 20px; }
+            h1 { font-size: 1.5rem; }
+            .care-grid { grid-template-columns: 1fr; gap: 15px; }
+            .shop-header { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="plant-image">
+        🪴 Стрелиция Николая
+    </div>
+    <div class="content">
+        <!-- Логотип и название магазина -->
+        <div class="shop-header">
+            <div class="logo-area">
+                <!-- Если логотип называется иначе или лежит в другой папке, измените src -->
+                <img src="logo.png" alt="Логотип Green Chaos" class="logo" onerror="this.style.display='none'">
+                <span class="shop-name">GREEN CHAOS</span>
+            </div>
+        </div>
+
+        <h1>Стрелиция Николая</h1>
+        <div class="latin-name">Strelitzia Nicolai</div>
+        <div class="description">Это крупное, вечнозеленое растение из семейства Стрелициевых, также известное как «Белая райская птица». В отличие от стрелиции королевской, этот вид — настоящий гигант, достигающий в природе высоты 10–12 метров. Он формирует мощный, похожий на ствол стебель и крупные, овальные, кожистые листья на длинных черешках, которые могут вырастать до 1,5 метров в длину. Внешне растение напоминает банановую пальму, а его листья часто имеют характерный разорванный вид</div>
+
+        <div class="care-grid">
+            <div class="care-item">
+                <div class="care-icon">☀️</div>
+                <div class="care-label">Освещение</div>
+                <div class="care-value">Яркий, рассеянный свет</div>
+            </div>
+            <div class="care-item">
+                <div class="care-icon">💧</div>
+                <div class="care-label">Полив</div>
+                <div class="care-value">Умеренный</div>
+            </div>
+            <div class="care-item">
+                <div class="care-icon">💨</div>
+                <div class="care-label">Влажность</div>
+                <div class="care-value">Высокая, любит опрыскивание</div>
+            </div>
+        </div>
+
+        <div class="fun-fact">
+            <strong>🌿 Интересный факт:</strong> Само название этого растения — дань уважения сразу двум персонам королевских кровей! Родовое имя Strelitzia было присвоено растению в честь королевы Шарлотты, супруги английского короля Георга III, происходившей из герцогского дома Мекленбург-Стрелиц. А видовое название Nicolai было дано в честь великого князя Николая Николаевича — сына российского императора Николая I, что делает эту «райскую птицу» растением с поистине имперским прошлым
+        </div>
+
+        <hr>
+
+        <div class="care-details">
+            <h3>📝 Подробный уход</h3>
+            <strong><em>Свет:</em></strong> Яркий рассеянный, без доступа палящих прямых солнечных лучей. Может переносить небольшое затенение, но при его недостатке теряет декоративность и может не зацвести. Идеальное место — у окон восточной или западной экспозиции<br><strong><em>Температура:</em></strong> Оптимальная температура для активного роста — от +20 до +25 °C. Зимой может выдерживать понижение до +14 °C, но лучше не допускать падения ниже +12 °C. Не выносит холодных сквозняков и резких перепадов температур<br><strong><em>Полив:</em></strong> В период вегетации (весна-лето) поливы должны быть частыми, но умеренными, чтобы субстрат оставался постоянно слегка влажным, но не мокрым. Сигнал к поливу — подсыхание верхнего слоя грунта. Зимой частоту полива сокращают. Используйте мягкую, отстоянную воду комнатной температуры<br><strong><em>Влажность воздуха:</em></strong> Нуждается в высокой влажности воздуха (от 60%). Рекомендуются ежедневные опрыскивания в жаркий период, теплый душ и протирание листьев влажной губкой. Для повышения влажности можно использовать поддон с влажным керамзитом или увлажнитель воздуха<br><strong><em>Почва:</em></strong> Грунт должен быть рыхлым, питательным и очень хорошо дренированным, чтобы избежать застоя воды. Идеальна готовая смесь для пальм или роз. Можно приготовить самостоятельно, смешав дерновую землю, листовую землю, перегной, торф и песок, или торф, компост и крупный песок/перлит. Обязателен толстый слой дренажа<br><strong><em>Подкормка:</em></strong> Вносят удобрения только в период активной вегетации, с весны до начала осени, 1-2 раза в месяц. Используйте комплексное удобрение для декоративно-лиственных растений или для пальм. Зимой подкормки прекращают<br><strong><em>Пересадка:</em></strong> Учитывая мощный стержневой корень, уходящий вглубь, емкость для посадки должна быть глубокой. Молодые растения пересаживают ежегодно весной. Взрослые крупные экземпляры — раз в 3-4 года или по мере оплетения корнями. Пересадку проводят методом перевалки, так как корни очень хрупкие<br><strong><em>Обрезка и опора:</em></strong> В специальной опоре, как правило, не нуждается, так как имеет мощный ствол. Проводят только санитарную обрезку, удаляя старые, сухие или поврежденные листья и цветоносы<br><strong><em>Размножение:</em></strong> Основные способы — деление взрослого куста (при пересадке) или посев свежесобранных семян. Семена требуют длительной стратификации и прорастают очень долго, до нескольких месяцев<br><strong><em>Особая примета:</em></strong> Растение ядовито! Содержит токсичные вещества, вызывающие раздражение кожи и слизистых, а при проглатывании — симптомы отравления. Все работы по уходу проводите в перчатках и тщательно мойте руки. Берегите от детей и домашних животных
+        </div>
+
+        <footer>
+            Моя коллекция растений · Уход обновлён: 27.05.2026
+        </footer>
+    </div>
+</div>
+</body>
+</html>
