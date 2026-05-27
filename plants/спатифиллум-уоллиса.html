@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Спатифиллум Уоллиса | Моя коллекция растений</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            color: #1a2e1f;
+            background-color: #fefaf5;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 24px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+        .plant-image {
+            background: linear-gradient(135deg, #e8f0e5 0%, #d4e2d0 100%);
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2d5a2c;
+            font-style: italic;
+            border-bottom: 1px solid #e2dcd0;
+        }
+        .content {
+            padding: 32px;
+        }
+        /* Стили для шапки с логотипом и названием */
+        .shop-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 2px solid #e2dcd0;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo {
+            max-height: 50px;
+            width: auto;
+        }
+        .shop-name {
+            font-size: 1.3rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #2c5f2d;
+            font-family: Georgia, serif;
+        }
+        h1 {
+            font-size: 2rem;
+            margin: 0 0 0.25rem 0;
+            color: #1a3b1a;
+            letter-spacing: -0.01em;
+        }
+        .latin-name {
+            font-style: italic;
+            color: #5a7c5a;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+        .description {
+            color: #4a5e4a;
+            margin-bottom: 1.5rem;
+        }
+        .care-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 20px 0;
+            background-color: #f9f6f0;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .care-item {
+            text-align: center;
+        }
+        .care-icon {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+        .care-label {
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #5a7c5a;
+            margin-bottom: 4px;
+        }
+        .care-value {
+            font-size: 0.9rem;
+            color: #2c3e2d;
+        }
+        .fun-fact {
+            background-color: #f0f4ea;
+            padding: 16px;
+            border-radius: 20px;
+            margin: 20px 0;
+            font-size: 0.95rem;
+            border-left: 4px solid #5a7c5a;
+        }
+        hr {
+            margin: 24px 0;
+            border: none;
+            height: 1px;
+            background-color: #e2dcd0;
+        }
+        .care-details {
+            margin-top: 20px;
+        }
+        .care-details h3 {
+            margin-bottom: 12px;
+            color: #1a3b1a;
+        }
+        .care-details p {
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            color: #4a5e4a;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.75rem;
+            color: #8a9e8a;
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 1px solid #e2dcd0;
+        }
+        @media (max-width: 600px) {
+            .content { padding: 20px; }
+            h1 { font-size: 1.5rem; }
+            .care-grid { grid-template-columns: 1fr; gap: 15px; }
+            .shop-header { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="plant-image">
+        🪴 Спатифиллум Уоллиса
+    </div>
+    <div class="content">
+        <!-- Логотип и название магазина -->
+        <div class="shop-header">
+            <div class="logo-area">
+                <!-- Если логотип называется иначе или лежит в другой папке, измените src -->
+                <img src="logo.png" alt="Логотип Green Chaos" class="logo" onerror="this.style.display='none'">
+                <span class="shop-name">GREEN CHAOS</span>
+            </div>
+        </div>
+
+        <h1>Спатифиллум Уоллиса</h1>
+        <div class="latin-name">Spathiphyllum Wallisii</div>
+        <div class="description">Этот вид, также известный как «мирная лилия» или «женское счастье», и стал прародителем большинства современных гибридных сортов. В природе, на родине в тропических лесах Колумбии, его открыл и привез в Европу биолог Рассел Уоллис в XIX веке, в честь кого растение и получило свое название. В отличие от современных гигантов, например, Спатифиллума 'Сенсация', этот вид очень компактен и в высоту редко превышает 30–40 см. Темно-зеленые глянцевые листья образуют густую розетку, из центра которой появляются изящные белые «паруса» соцветий. Благодаря своей неприхотливости, это растение считается идеальным выбором для первого знакомства с ароидными, после которого можно переходить к более капризным видам</div>
+
+        <div class="care-grid">
+            <div class="care-item">
+                <div class="care-icon">☀️</div>
+                <div class="care-label">Освещение</div>
+                <div class="care-value">Яркий, рассеянный свет</div>
+            </div>
+            <div class="care-item">
+                <div class="care-icon">💧</div>
+                <div class="care-label">Полив</div>
+                <div class="care-value">Обильный</div>
+            </div>
+            <div class="care-item">
+                <div class="care-icon">💨</div>
+                <div class="care-label">Влажность</div>
+                <div class="care-value">Высокая, любит опрыскивание</div>
+            </div>
+        </div>
+
+        <div class="fun-fact">
+            <strong>🌿 Интересный факт:</strong> Свое народное название «Женское счастье» этот цветок получил не случайно. Существует красивое поверье, что спатифиллум особенно помогает незамужним девушкам встретить свою судьбу, семейным — улучшить взаимопонимание с супругом, а бездетным — испытать радость материнства. Считается, что его магическая сила раскрывается, когда цветок преподносят в подарок<br>Кроме того, это растение — известный природный «синоптик». За несколько часов до начала дождя спатифиллум начинает наглядно сигнализировать: его элегантные листья сначала теряют тургор и поникают, а затем на их кончиках появляются капельки воды. Так он избавляется от лишней влаги в тканях
+        </div>
+
+        <hr>
+
+        <div class="care-details">
+            <h3>📝 Подробный уход</h3>
+            <strong><em>Свет:</em></strong> Предпочитает яркий рассеянный свет, но выносит полутень. Лучшее место — у восточного или западного окна. На южном окне летом потребуется легкое притенение от прямых полуденных лучей, которые могут вызвать ожоги. А вот в тени на северном окне растение будет хуже цвести и его листья могут побледнеть<br><strong><em>Температура:</em></strong> Оптимальная температура круглый год — от +18 до +25°C. Растение боится резких перепадов и холодных сквозняков, поэтому важно оберегать его от них. Зимой следите, чтобы температура не опускалась ниже +16°C.<br><strong><em>Полив:</em></strong> Полив должен быть регулярным и обильным, особенно в теплое время года, отстоянной водой комнатной температуры. Лучший сигнал к поливу — подсыхание верхнего слоя почвы. Самая частая ошибка — застой воды в поддоне, который приводит к загниванию корней. Зимой полив сокращают, но не допускают полного пересыхания земляного кома.<br><strong><em>Влажность воздуха:</em></strong> Спатифиллум любит высокую влажность воздуха. Для поддержания комфортных условий рекомендуется регулярное опрыскивание листьев мягкой водой, особенно в отопительный сезон. Также можно использовать поддон с влажным керамзитом или поставить растение в группу с другими цветами. Периодически, раз в 10-14 дней, полезно протирать листья от пыли влажной губкой<br><strong><em>Почва:</em></strong> Требуется рыхлый, питательный, воздухопроницаемый и слабокислый грунт. Идеально подойдет готовая смесь для ароидных. Можно приготовить почвосмесь самостоятельно, смешав дерновую и листовую землю, торф, перегной и песок (2:1:1:1:1). Для улучшения структуры полезно добавить немного перлита и древесного угля. Обязателен хороший слой дренажа на дне горшка<br><strong><em>Подкормка:</em></strong> Вносите удобрения в период активного роста (весна-лето) раз в 2-4 недели. Для этого используют комплексные удобрения для цветущих растений в половинной от рекомендуемой дозировке. Зимой подкормки прекращают или проводят не чаще раза в месяц<br><strong><em>Пересадка:</em></strong> Молодые растения пересаживают ежегодно весной. Взрослым экземплярам требуется пересадка раз в 2-3 года. Горшок должен быть лишь на 2-3 см шире предыдущего, иначе цветение может прекратиться. Важно: растение предпочитает «тесный» горшок<br><strong><em>Обрезка и опора:</em></strong> В опоре не нуждается. Обрезка — санитарная, для удаления отцветших цветоносов, старых, пожелтевших или поврежденных листьев. Срезы можно присыпать толченым углем. Это стимулирует рост новых здоровых листьев и сохраняет декоративность<br><strong><em>Размножение:</em></strong> Проще всего размножать спатифиллум делением куста во время весенней пересадки. Аккуратно разделите корневище на части так, чтобы у каждой деленки было несколько собственных листьев и корней, и посадите их в отдельные горшки<br><strong><em>Особая примета:</em></strong> Важно знать, что все части спатифиллума ядовиты, как и у многих растений семейства Ароидные. При попадании на кожу его сок может вызвать раздражение, а если его случайно проглотить — отравление. Поэтому все работы по уходу необходимо проводить в перчатках и тщательно мыть руки. Берегите растение от маленьких детей и домашних животных
+        </div>
+
+        <footer>
+            Моя коллекция растений · Уход обновлён: 27.05.2026
+        </footer>
+    </div>
+</div>
+</body>
+</html>
